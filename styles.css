@@ -1,0 +1,132 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a base font to the body */
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the header */
+header {
+    background: #000;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Style the navigation menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Main content area */
+main {
+    padding: 20px;
+}
+
+/* Article and section titles */
+h2, h3 {
+    color: #cc0000;
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Changed from absolute to fixed */
+    bottom: 0;
+    left: 0;
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+    header nav ul li {
+        display: block;
+        margin: 0;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 10px;
+    }
+}
+.language-icon {
+    width: 20px; /* or whatever size you prefer */
+    height: auto;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+header h1 {
+    color: #fff; /* Choose color that fits the theme */
+    font-size: 2.5em; /* Adjust size to your preference */
+    text-align: center; /* Center the title if you want */
+    padding: 20px 0; /* Add some padding */
+    /* Any other styles you want to apply to your header */
+}
+.radio-frikio-image {
+    max-width: 400px; /* Makes the image responsive */
+    height: auto; /* Keeps the aspect ratio intact */
+    display: block; /* Aligns the image properly in the flow of the document */
+    margin: 20px auto; /* Adds space around the image and centers it */
+}
+
+/* Add this to your existing styles.css content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
